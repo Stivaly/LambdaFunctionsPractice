@@ -12,7 +12,7 @@ import random
 # Utilizaremos la librería random para hacer mas dinamica la escogencia de numeros
 
 
-# Abstracción de generación de numeros enteros leatorios dentro de una lista
+# Abstracción de generación de numeros enteros aleatorios dentro de una lista
 def numeros_aleatorios(cantidad, min=-1000, max=1000):
     """
     lista de números enteros aleatorios.
