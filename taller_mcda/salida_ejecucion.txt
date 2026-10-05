@@ -1,0 +1,179 @@
+============================================================
+CASO BASE: 4 PLATAFORMAS
+============================================================
+
+VALORES NORMALIZADOS (0-10)
+A_ShopFast {'costo': 7.14, 'rendimiento': 7.78, 'disponibilidad': 7.0, 'PU': 8.5, 'PEOU': 7.5, 'mantenibilidad': 7.0, 'persuasion_support': 10.0}
+B_TrustCart {'costo': 4.29, 'rendimiento': 6.67, 'disponibilidad': 9.0, 'PU': 8.75, 'PEOU': 9.0, 'mantenibilidad': 8.0, 'persuasion_support': 7.5}
+C_LeanCommerce {'costo': 8.57, 'rendimiento': 4.0, 'disponibilidad': 5.0, 'PU': 7.5, 'PEOU': 8.0, 'mantenibilidad': 7.5, 'persuasion_support': 6.5}
+D_ProCommerce {'costo': 2.29, 'rendimiento': 8.67, 'disponibilidad': 9.5, 'PU': 9.25, 'PEOU': 7.75, 'mantenibilidad': 8.5, 'persuasion_support': 8.0}
+
+SCORING SIN GATES
+1 A_ShopFast 7.949
+2 B_TrustCart 7.685
+3 D_ProCommerce 7.61
+4 C_LeanCommerce 7.011
+
+ADMISIBILIDAD
+A_ShopFast FAIL (falla: autonomia)
+B_TrustCart PASS
+C_LeanCommerce PASS
+D_ProCommerce PASS
+
+ESTADO: Optimal
+A_ShopFast score= 7.949 admisible= False x= 0.0
+B_TrustCart score= 7.685 admisible= True x= 1.0
+C_LeanCommerce score= 7.011 admisible= True x= 0.0
+D_ProCommerce score= 7.61 admisible= True x= 0.0
+
+SELECCIONADA: B_TrustCart Score: 7.685
+
+DETALLE (trazabilidad)
+
+ A_ShopFast | Admisible: False | Score: 7.949
+   costo               dato=35000    valor=7.143 peso=0.15 contribucion=1.071
+   rendimiento         dato=250      valor=7.778 peso=0.10 contribucion=0.778
+   disponibilidad      dato=99.7     valor=7.000 peso=0.10 contribucion=0.700
+   PU                  dato=4.4      valor=8.500 peso=0.20 contribucion=1.700
+   PEOU                dato=4.0      valor=7.500 peso=0.20 contribucion=1.500
+   mantenibilidad      dato=7.0      valor=7.000 peso=0.10 contribucion=0.700
+   persuasion_support  dato=10.0     valor=10.000 peso=0.15 contribucion=1.500
+
+ B_TrustCart | Admisible: True | Score: 7.685
+   costo               dato=45000    valor=4.286 peso=0.15 contribucion=0.643
+   rendimiento         dato=300      valor=6.667 peso=0.10 contribucion=0.667
+   disponibilidad      dato=99.9     valor=9.000 peso=0.10 contribucion=0.900
+   PU                  dato=4.5      valor=8.750 peso=0.20 contribucion=1.750
+   PEOU                dato=4.6      valor=9.000 peso=0.20 contribucion=1.800
+   mantenibilidad      dato=8.0      valor=8.000 peso=0.10 contribucion=0.800
+   persuasion_support  dato=7.5      valor=7.500 peso=0.15 contribucion=1.125
+
+ C_LeanCommerce | Admisible: True | Score: 7.011
+   costo               dato=30000    valor=8.571 peso=0.15 contribucion=1.286
+   rendimiento         dato=420      valor=4.000 peso=0.10 contribucion=0.400
+   disponibilidad      dato=99.5     valor=5.000 peso=0.10 contribucion=0.500
+   PU                  dato=4.0      valor=7.500 peso=0.20 contribucion=1.500
+   PEOU                dato=4.2      valor=8.000 peso=0.20 contribucion=1.600
+   mantenibilidad      dato=7.5      valor=7.500 peso=0.10 contribucion=0.750
+   persuasion_support  dato=6.5      valor=6.500 peso=0.15 contribucion=0.975
+
+ D_ProCommerce | Admisible: True | Score: 7.61
+   costo               dato=52000    valor=2.286 peso=0.15 contribucion=0.343
+   rendimiento         dato=210      valor=8.667 peso=0.10 contribucion=0.867
+   disponibilidad      dato=99.95    valor=9.500 peso=0.10 contribucion=0.950
+   PU                  dato=4.7      valor=9.250 peso=0.20 contribucion=1.850
+   PEOU                dato=4.1      valor=7.750 peso=0.20 contribucion=1.550
+   mantenibilidad      dato=8.5      valor=8.500 peso=0.10 contribucion=0.850
+   persuasion_support  dato=8.0      valor=8.000 peso=0.15 contribucion=1.200
+
+VERIFICACION
+Pesos suman 1: True
+Se elige exactamente una alternativa: True
+Inadmisibles con x=0: True
+PuLP coincide con el maximo admisible: True
+
+SENSIBILIDAD DE PEOU
+peso   ganador          score   2do lugar        diferencia  cambio?
+0.10   D_ProCommerce    7.592   B_TrustCart      0.072       SI
+0.15   B_TrustCart      7.602   D_ProCommerce    0.002       NO
+0.20   B_TrustCart      7.685   D_ProCommerce    0.075       NO
+0.25   B_TrustCart      7.767   D_ProCommerce    0.148       NO
+0.30   B_TrustCart      7.849   D_ProCommerce    0.222       NO
+
+Score manual B: 7.685 | Score Python B: 7.685
+
+
+============================================================
+DESAFIO FINAL: 5 PLATAFORMAS
+============================================================
+
+VALORES NORMALIZADOS (0-10)
+A_ShopFast {'costo': 7.14, 'rendimiento': 7.78, 'disponibilidad': 7.0, 'PU': 8.5, 'PEOU': 7.5, 'mantenibilidad': 7.0, 'persuasion_support': 10.0}
+B_TrustCart {'costo': 4.29, 'rendimiento': 6.67, 'disponibilidad': 9.0, 'PU': 8.75, 'PEOU': 9.0, 'mantenibilidad': 8.0, 'persuasion_support': 7.5}
+C_LeanCommerce {'costo': 8.57, 'rendimiento': 4.0, 'disponibilidad': 5.0, 'PU': 7.5, 'PEOU': 8.0, 'mantenibilidad': 7.5, 'persuasion_support': 6.5}
+D_ProCommerce {'costo': 2.29, 'rendimiento': 8.67, 'disponibilidad': 9.5, 'PU': 9.25, 'PEOU': 7.75, 'mantenibilidad': 8.5, 'persuasion_support': 8.0}
+E_NovaShop {'costo': 5.43, 'rendimiento': 7.33, 'disponibilidad': 8.5, 'PU': 8.25, 'PEOU': 9.25, 'mantenibilidad': 7.8, 'persuasion_support': 8.2}
+
+SCORING SIN GATES
+1 A_ShopFast 7.949
+2 E_NovaShop 7.908
+3 B_TrustCart 7.685
+4 D_ProCommerce 7.61
+5 C_LeanCommerce 7.011
+
+ADMISIBILIDAD
+A_ShopFast FAIL (falla: autonomia)
+B_TrustCart PASS
+C_LeanCommerce PASS
+D_ProCommerce PASS
+E_NovaShop PASS
+
+ESTADO: Optimal
+A_ShopFast score= 7.949 admisible= False x= 0.0
+B_TrustCart score= 7.685 admisible= True x= 0.0
+C_LeanCommerce score= 7.011 admisible= True x= 0.0
+D_ProCommerce score= 7.61 admisible= True x= 0.0
+E_NovaShop score= 7.908 admisible= True x= 1.0
+
+SELECCIONADA: E_NovaShop Score: 7.908
+
+DETALLE (trazabilidad)
+
+ A_ShopFast | Admisible: False | Score: 7.949
+   costo               dato=35000    valor=7.143 peso=0.15 contribucion=1.071
+   rendimiento         dato=250      valor=7.778 peso=0.10 contribucion=0.778
+   disponibilidad      dato=99.7     valor=7.000 peso=0.10 contribucion=0.700
+   PU                  dato=4.4      valor=8.500 peso=0.20 contribucion=1.700
+   PEOU                dato=4.0      valor=7.500 peso=0.20 contribucion=1.500
+   mantenibilidad      dato=7.0      valor=7.000 peso=0.10 contribucion=0.700
+   persuasion_support  dato=10.0     valor=10.000 peso=0.15 contribucion=1.500
+
+ B_TrustCart | Admisible: True | Score: 7.685
+   costo               dato=45000    valor=4.286 peso=0.15 contribucion=0.643
+   rendimiento         dato=300      valor=6.667 peso=0.10 contribucion=0.667
+   disponibilidad      dato=99.9     valor=9.000 peso=0.10 contribucion=0.900
+   PU                  dato=4.5      valor=8.750 peso=0.20 contribucion=1.750
+   PEOU                dato=4.6      valor=9.000 peso=0.20 contribucion=1.800
+   mantenibilidad      dato=8.0      valor=8.000 peso=0.10 contribucion=0.800
+   persuasion_support  dato=7.5      valor=7.500 peso=0.15 contribucion=1.125
+
+ C_LeanCommerce | Admisible: True | Score: 7.011
+   costo               dato=30000    valor=8.571 peso=0.15 contribucion=1.286
+   rendimiento         dato=420      valor=4.000 peso=0.10 contribucion=0.400
+   disponibilidad      dato=99.5     valor=5.000 peso=0.10 contribucion=0.500
+   PU                  dato=4.0      valor=7.500 peso=0.20 contribucion=1.500
+   PEOU                dato=4.2      valor=8.000 peso=0.20 contribucion=1.600
+   mantenibilidad      dato=7.5      valor=7.500 peso=0.10 contribucion=0.750
+   persuasion_support  dato=6.5      valor=6.500 peso=0.15 contribucion=0.975
+
+ D_ProCommerce | Admisible: True | Score: 7.61
+   costo               dato=52000    valor=2.286 peso=0.15 contribucion=0.343
+   rendimiento         dato=210      valor=8.667 peso=0.10 contribucion=0.867
+   disponibilidad      dato=99.95    valor=9.500 peso=0.10 contribucion=0.950
+   PU                  dato=4.7      valor=9.250 peso=0.20 contribucion=1.850
+   PEOU                dato=4.1      valor=7.750 peso=0.20 contribucion=1.550
+   mantenibilidad      dato=8.5      valor=8.500 peso=0.10 contribucion=0.850
+   persuasion_support  dato=8.0      valor=8.000 peso=0.15 contribucion=1.200
+
+ E_NovaShop | Admisible: True | Score: 7.908
+   costo               dato=41000    valor=5.429 peso=0.15 contribucion=0.814
+   rendimiento         dato=270      valor=7.333 peso=0.10 contribucion=0.733
+   disponibilidad      dato=99.85    valor=8.500 peso=0.10 contribucion=0.850
+   PU                  dato=4.3      valor=8.250 peso=0.20 contribucion=1.650
+   PEOU                dato=4.7      valor=9.250 peso=0.20 contribucion=1.850
+   mantenibilidad      dato=7.8      valor=7.800 peso=0.10 contribucion=0.780
+   persuasion_support  dato=8.2      valor=8.200 peso=0.15 contribucion=1.230
+
+VERIFICACION
+Pesos suman 1: True
+Se elige exactamente una alternativa: True
+Inadmisibles con x=0: True
+PuLP coincide con el maximo admisible: True
+
+SENSIBILIDAD DE PEOU
+peso   ganador          score   2do lugar        diferencia  cambio?
+0.10   E_NovaShop       7.740   D_ProCommerce    0.148       NO
+0.15   E_NovaShop       7.824   B_TrustCart      0.221       NO
+0.20   E_NovaShop       7.908   B_TrustCart      0.223       NO
+0.25   E_NovaShop       7.992   B_TrustCart      0.225       NO
+0.30   E_NovaShop       8.075   B_TrustCart      0.226       NO
