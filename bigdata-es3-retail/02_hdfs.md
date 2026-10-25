@@ -2,6 +2,8 @@
 
 ## Tarjeta de transición
 
+**Slide 3** de `ES3_Retail_Transiciones.pptx`: mostrar 3–5 s al iniciar la etapa. El texto de la slide es este:
+
 ```text
 Etapa 1 · Hadoop / HDFS
 Almacenamiento distribuido de los datos originales

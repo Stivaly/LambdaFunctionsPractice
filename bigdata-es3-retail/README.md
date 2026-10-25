@@ -17,6 +17,7 @@ Este directorio contiene el guion completo del video (transiciones + narración 
 | [06_mahout.md](06_mahout.md) | Etapa 5 — Apache Mahout (recomendaciones) | ~5:00 |
 | [07_cierre.md](07_cierre.md) | Diagrama, comparación de herramientas, resultado y limitación | ~3:00 |
 | [08_problemas_y_verificacion.md](08_problemas_y_verificacion.md) | Problemas encontrados/soluciones y verificaciones cruzadas | se usa dentro de las etapas |
+| [ES3_Retail_Transiciones.pptx](ES3_Retail_Transiciones.pptx) | 12 slides de transición (portada, caso, 5 etapas, cierre) | se intercalan |
 | [09_resultados_resumidos.md](09_resultados_resumidos.md) | Archivo de resultados resumidos (entregable) | — |
 
 ## Versiones de herramientas (compatibles con JDK 8)

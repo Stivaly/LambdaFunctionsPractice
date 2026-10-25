@@ -20,7 +20,7 @@ El enunciado sugiere 6 min para Mahout y 3 para el cierre; se recortó 1 min de 
 
 Cada `.md` de etapa tiene las mismas secciones:
 
-1. **Tarjeta de transición** — texto que aparece en pantalla 3–5 s al iniciar la etapa.
+1. **Tarjeta de transición** — slide de `ES3_Retail_Transiciones.pptx` que aparece 3–5 s al iniciar la etapa (el número de slide está indicado en cada `.md`).
 2. **Narración** — texto para leer con tu propia voz (en bloques `>`). Está separado por pasos para que leas mientras ejecutas.
 3. **Comandos / scripts** — lo que se ejecuta en terminal. Los scripts indican el archivo donde guardarlos.
 4. **Qué debe verse** — cifras esperadas para comprobar tu salida real **antes** de narrarla.

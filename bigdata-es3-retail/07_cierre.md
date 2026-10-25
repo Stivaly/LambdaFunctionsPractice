@@ -2,12 +2,16 @@
 
 ## Tarjeta de transición
 
+**Slide 8** de `ES3_Retail_Transiciones.pptx` (divisor del cierre). Las slides 9–12 se usan dentro del cierre, como se indica abajo.
+
 ```text
 Cierre
 Flujo demostrado · Qué resuelve cada herramienta · Resultado y limitación
 ```
 
 ## Diagrama del flujo efectivamente demostrado
+
+**Slide 9** de `ES3_Retail_Transiciones.pptx` (diagrama ya dibujado; el Mermaid de abajo es la misma información).
 
 Mostrar este diagrama en pantalla (en VS Code con vista previa Markdown, o exportado a imagen desde https://mermaid.live).
 
@@ -49,6 +53,8 @@ CSV ──put──► HDFS /retail/raw ──► Pig (ETL) ──► HDFS /reta
 
 ### Qué problema resuelve cada herramienta (≈50 s)
 
+**Slide 10** de `ES3_Retail_Transiciones.pptx`.
+
 | Herramienta | Problema que resuelve | Tipo de acceso |
 |---|---|---|
 | **HDFS** | Almacenar archivos grandes de forma distribuida y tolerante a fallos | Archivos completos, escritura una vez |
@@ -61,6 +67,8 @@ CSV ──put──► HDFS /retail/raw ──► Pig (ETL) ──► HDFS /reta
 
 ### Resultado de negocio (≈30 s)
 
+**Slide 11** de `ES3_Retail_Transiciones.pptx` (se mantiene también durante la limitación técnica).
+
 > El resultado de negocio principal es que la facturación está muy concentrada: el Notebook solo representa el 57,6 % de las ventas, 34,5 de 59,9 millones, y Tecnología el 61,5 %. Además, Concepción tiene tantas ventas como las otras regiones pero el menor ticket promedio, y dos productos del catálogo, la Cafetera y las Mancuernas, no se vendieron nunca. Mi recomendación sería diversificar: usar las recomendaciones de Mahout para ofrecer productos de mayor valor en Concepción y revisar el surtido de Hogar y Deportes.
 
 ### Limitación técnica (≈30 s)
@@ -72,6 +80,8 @@ CSV ──put──► HDFS /retail/raw ──► Pig (ETL) ──► HDFS /reta
 > Los scripts, comandos y resultados están entregados en Moodle junto con el README. Muchas gracias.
 
 ## Tarjeta final (3 s)
+
+**Slide 12** de `ES3_Retail_Transiciones.pptx`.
 
 ```text
 Gracias

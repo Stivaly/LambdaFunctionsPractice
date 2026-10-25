@@ -2,6 +2,8 @@
 
 ## Tarjeta de transición (pantalla inicial, 5–8 s)
 
+**Slide 1** de `ES3_Retail_Transiciones.pptx` (portada). Editar nombre y sección en la slide antes de grabar.
+
 ```text
 Evaluación Sumativa 3 — Big Data (TI2081)
 Proyecto integrador: Retail Inteligente
@@ -24,6 +26,8 @@ Sección [XXX]
 > Todo lo que se ve en este video se ejecuta en vivo sobre Zorin OS con Java 8.
 
 ## En pantalla mientras narras
+
+Primero **slide 2** de `ES3_Retail_Transiciones.pptx` («El caso») mientras narras el contexto, luego la terminal:
 
 Mostrar la terminal con:
 

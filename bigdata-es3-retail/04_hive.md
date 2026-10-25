@@ -2,6 +2,8 @@
 
 ## Tarjeta de transición
 
+**Slide 5** de `ES3_Retail_Transiciones.pptx`: mostrar 3–5 s al iniciar la etapa. El texto de la slide es este:
+
 ```text
 Etapa 3 · Apache Hive
 Data warehouse retail_dw sobre los datos limpios de Pig

@@ -2,6 +2,8 @@
 
 ## Tarjeta de transición
 
+**Slide 7** de `ES3_Retail_Transiciones.pptx`: mostrar 3–5 s al iniciar la etapa. El texto de la slide es este:
+
 ```text
 Etapa 5 · Apache Mahout 0.13.0
 Filtrado colaborativo basado en ítems (recommenditembased)
