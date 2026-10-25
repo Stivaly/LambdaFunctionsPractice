@@ -9,7 +9,6 @@ Este directorio contiene el guion completo del video (transiciones + narración 
 | Archivo | Uso | Tiempo en video |
 |---|---|---|
 | [00_guion_y_tiempos.md](00_guion_y_tiempos.md) | Estructura del video, tiempos, checklist de grabación | — |
-| [00_preparacion_ambiente.md](00_preparacion_ambiente.md) | Instalación/arranque con JDK 8 en Zorin OS (antes de grabar) | — |
 | [01_intro.md](01_intro.md) | Identificación y presentación del caso | ~1:00 |
 | [02_hdfs.md](02_hdfs.md) | Etapa 1 — Hadoop / HDFS | ~3:00 |
 | [03_pig.md](03_pig.md) | Etapa 2 — Apache Pig (ETL) | ~6:00 |
@@ -81,7 +80,7 @@ Cada bloque de código de los `.md` indica el nombre de archivo en el que debe g
 ## Instrucciones reproducibles (resumen)
 
 ```bash
-# 0. Servicios arriba (ver 00_preparacion_ambiente.md)
+# 0. Servicios arriba
 start-dfs.sh && start-yarn.sh && mapred --daemon start historyserver
 start-hbase.sh
 

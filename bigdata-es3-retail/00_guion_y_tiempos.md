@@ -38,7 +38,13 @@ Cada `.md` de etapa tiene las mismas secciones:
 - [ ] Probar el micrófono: voz clara, sin música de fondo encima de la narración.
 - [ ] Servicios ya arrancados antes de grabar (puedes mostrar `jps` en el video, no hace falta grabar el arranque).
 - [ ] Ensayar cada etapa una vez completa (Pig y Hive tardan; puedes cortar las esperas en edición, **no** las salidas).
-- [ ] Limpiar ejecuciones previas para que se vea el flujo desde cero: ver "Reinicio limpio" en `00_preparacion_ambiente.md`.
+- [ ] Limpiar ejecuciones previas para que se vea el flujo desde cero:
+  ```bash
+  hdfs dfs -rm -r -f /retail
+  hive -e "DROP DATABASE IF EXISTS retail_dw CASCADE;"
+  echo "disable 'perfiles_cliente'; drop 'perfiles_cliente'" | hbase shell -n
+  ```
+- [ ] Si Hive usa Derby embebido, ejecutar `hive` siempre desde `~/retail_es3` (donde está `metastore_db`).
 - [ ] Tener abiertas 2 pestañas de terminal: una para comandos, otra con el editor (`nano`/`gedit`/VS Code) mostrando los scripts.
 
 ## Edición permitida

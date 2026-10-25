@@ -37,7 +37,7 @@ Si en tu ambiente `sin_trim` sale vacío y `con_trim` con el número, ese es el 
 | `Name node is in safe mode` | Recién arrancado | Esperar o `hdfs dfsadmin -safemode leave` |
 | Pig: `ERROR 2997 ... Unable to recreate exception` o falla al leer contadores | JobHistory Server apagado | `mapred --daemon start historyserver` |
 | Pig: `Output Location Validation Failed ... already exists` | Salida previa | El script usa `rmf`; o `hdfs dfs -rm -r /retail/clean/...` |
-| Job MapReduce: `Could not find or load main class ...MRAppMaster` | Falta classpath en `mapred-site.xml` | Agregar `HADOOP_MAPRED_HOME` (ver `00_preparacion_ambiente.md`) |
+| Job MapReduce: `Could not find or load main class ...MRAppMaster` | Falta classpath en `mapred-site.xml` | Agregar `HADOOP_MAPRED_HOME` en `mapred-site.xml` |
 | Hive 3.1.3: `NoSuchMethodError: com.google.common.base.Preconditions.checkArgument` | Guava de Hive (19) vs Hadoop 3 (27) | `rm $HIVE_HOME/lib/guava-19.0.jar` y `cp $HADOOP_HOME/share/hadoop/common/lib/guava-27.0-jre.jar $HIVE_HOME/lib/` |
 | Hive: `Table not found` en otra sesión | Metastore Derby creado en otro directorio | Ejecutar `hive` siempre desde `~/retail_es3` |
 | Hive: columnas en `NULL` | Separador o tipos distintos a la salida de Pig | Ver `hdfs dfs -cat .../part-* \| head`; separador `,` y 8 columnas |
